@@ -1,0 +1,470 @@
+.reseaux .res
+{
+    font-size: 200%;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.reseaux .lien
+{
+    font-size: 150%;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.reseaux
+{
+    width: 100%;
+    height: 20vh;
+    padding: 2% -2% 1% 2%;
+    background: url(../photos/reseau.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reseaux:hover
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    background: linear-gradient(to left, rgb(95, 93, 93,0.4),rgb(219, 146, 146,0.6));
+}
+.intro,.resif_head
+{
+    text-align: justify;
+}
+.resif_titre
+{
+    font-size: 120%;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: 2px solid black;
+    text-align: center;
+    color: antiquewhite;
+    background:linear-gradient(to left,rgb(151, 151, 175),rgb(138, 121, 121)) ;
+}
+.resif_head .resif_head1
+{
+    width: 60%;
+}
+.resif_head .resif_head2
+{
+    width: 30%;
+}
+.resif_head 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+.resif_head1,.resif_head2
+{
+    display: inline-block;
+}
+h1
+{
+    text-align: center;
+    text-decoration: underline;
+}
+.resif_head2
+{
+    margin-top: 4px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px rgb(138, 121, 121);
+}
+.cat-reseau li span
+{
+    text-decoration: underline;
+    font-size: 130%;
+    font-weight: bold;
+}
+.cat-reseau li>p, ol p
+{
+    text-align: justify;
+    margin-right: 2.5%;
+}
+.cat-reseau .imgres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.cat-reseau .imgres figure
+{
+    width: 30%;
+}
+.cat-reseau .imgres img
+{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px  rgb(138, 121, 121);
+}
+.cat-reseau .imgres figcaption
+{
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+    background:linear-gradient(to right,rgb(241, 207, 207),rgb(190, 176, 176));
+    font-size: 17px;
+    color: rgb(94, 82, 82);
+}
+.resif_head2 li>a
+{
+    text-decoration: none;
+    color: black;
+}
+.resif_head2 li>a:hover
+{
+    color: rgb(172, 54, 54);
+}
+.cat-reseau ol li span
+{
+    text-decoration: underline;
+}
+.typetransmission p
+{
+    text-align: justify;
+}
+.typetransmission li span
+{
+    text-decoration: underline;
+    text-decoration: underline;
+    font-size: 130%;
+    font-weight: bold;
+}
+.typetransmission div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.typetransmission img
+{
+    text-align: center;
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px  rgb(138, 121, 121);
+    padding:1% 1% 1% 1%;
+    margin-bottom: 10px;
+}
+.modetransmission p
+{
+    text-align: justify;
+}
+
+.modetransmission li span
+{
+    text-decoration: underline;
+    text-decoration: underline;
+    font-size: 130%;
+    font-weight: bold;
+}
+.qst
+{
+    font: 19px;
+    font-weight: 600; 
+    text-decoration: dashed;
+}
+.modele li span
+{
+    text-decoration: underline;
+    text-decoration: underline;
+    font-size: 130%;
+    font-weight: bold;
+}
+.modele p
+{
+    text-align: justify;
+}
+.cls
+{
+    text-decoration: none;
+    font-size: medium;
+    clear: both;
+    font-weight: 600;
+    color: rgb(136, 136, 172);
+    text-decoration: none;
+}
+.modele div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.modele img
+{
+    text-align: center;
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px  rgb(138, 121, 121);
+    padding:1% 1% 1% 1%;
+    margin-bottom: 10px;
+}
+p
+{
+    text-align: justify;
+}
+/* partie lan */
+div.definition
+{
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px  rgb(138, 121, 121);
+    width: 20%;
+    margin-left: 40%;
+    background:linear-gradient(to right,rgb(241, 207, 207, 0.3),rgb(190, 176, 176, 0.3));
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+div.definition div
+{
+    text-align: center;
+    border-bottom: 1px solid black;
+    background: linear-gradient(to right, rgb(149, 149, 179),white);
+    color: black;
+    font-weight: 700;
+}
+div.definition li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+}
+div.definition li a:hover
+{
+    color: darkred;
+    text-decoration: underline;
+}
+div.definition li 
+{
+    padding: 2%;
+    padding-left:0%;
+}
+#lanwan img
+{
+    display: block;
+    width: 35%;
+    margin-left: 32.5%;
+    margin-bottom: 3%;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px gray;
+
+}
+.type img
+{
+    display: block;
+    width: 30%;
+    margin-left: 40%;
+    margin-bottom: 3%;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px gray;
+
+}
+/* partie equipement */
+.cablage figure
+{
+    width: 20%;
+}
+.cablage figure img
+{
+    width: 98%;
+    height: 200px;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px gray;
+}
+.cablage figure figcaption
+{
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+    background:linear-gradient(to right,rgb(241, 207, 207),rgb(190, 176, 176));
+    font-size: 17px;
+    color: rgb(94, 82, 82);
+}
+.carac li
+{
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: 400;
+}
+.caract li
+{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.cablage .foto
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cable
+{
+    font-size: 120%;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: 2px solid black;
+    text-align: center;
+    color: antiquewhite;
+    background:linear-gradient(to left,rgb(151, 151, 175),rgb(138, 121, 121)) ;
+    margin-bottom: 1%;
+}
+div.switch,div.routeur,div.AP,div.firewall,div.modem,div.hub,div.bridge,div.pc,div.server,div.print,div.backup
+{
+    text-align: center;
+    border: 2px solid black;
+    font-weight: 700;
+    background: linear-gradient(to left,rgb(134, 109, 109,0.3),rgb(78, 75, 75,0.3));
+    font-size: 110%;
+}
+img.switch,img.routeur,img.AP,img.firewall,img.modem,img.hub,img.bridge,img.pc,img.server,img.print,img.backup,img.coffret,img.tiroir,img.panneau
+{
+    width: 30%;
+    height: 200px;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px gray;
+}
+.cablage li
+{
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: 600;
+}
+/* partie administration */
+header.adminheader
+{
+   background:url(../photos/reseau4all.avif)  ;
+   height: 20vh;
+   color: whitesmoke;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 700;
+}
+.plus
+{
+    display: none;
+}
+/*----------MEDIA QUERIES-----------------*/
+
+@media screen and (max-width:1220px)
+{
+    .plus
+    {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: underline;
+        font-weight: 700;
+        margin-top: 10%;
+
+    }
+    .resif_head
+    {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 166.5%;
+        gap: 10px;
+    }
+    .resif_head2
+    {
+        margin-left: 16%;
+    }
+    .cat-reseau .imgres
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cat-reseau .imgres img, .cat-reseau .imgres figcaption
+    {
+        width: 140%;
+    }
+    .typetransmission img, .modele img
+    {
+        width: 60%;
+    }
+        /* partie LAN */
+    div.definition
+    {
+        width: 40%;
+        margin-left: 30%;
+    }
+    #lanwan img,.type img
+    {
+        width: 40%;
+        margin-left: 30%;
+        border: 2px solid black;
+        padding: 2px 2px 2px 2px;
+        box-shadow: 2px 2px 2px gray;
+    }
+    /* partie equipement */
+    .cablage .foto
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cablage figure img
+    {
+        width: 150%;
+    }
+    .cablage figure figcaption
+   {
+    width: 155%;
+   }
+   img.switch,img.routeur,img.AP,img.firewall,img.modem,img.hub,img.bridge,img.pc,img.server,img.print,img.backup,img.coffret,img.tiroir,img.panneau
+   {
+    width: 50%;
+    margin-left: 25%;
+   }
+   p.reseaux
+   {
+       display: none;
+   }
+}
+
+@media screen and (max-width:660px)
+{
+    .cat-reseau .imgres
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cat-reseau .imgres img, .cat-reseau .imgres figcaption
+    {
+        width: 140%;
+    }
+    .typetransmission img, .modele img
+    {
+        width: 60%;
+    }
+    .cablage figure img
+    {
+        width: 195%;
+    }
+    .cablage figure figcaption
+    {
+        width: 200%;
+    }
+    .plus
+    {
+        margin-top: 25%;
+    }
+}

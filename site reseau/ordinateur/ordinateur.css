@@ -1,0 +1,164 @@
+h1,h2
+{
+    text-align: center;
+    text-decoration: underline;
+}
+h2.hard
+{
+    padding-bottom: 7px;
+}
+p
+{
+    text-align: justify;
+}
+.image img
+{
+    width: 90%;
+    height: 300px;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px gray;
+}
+.image
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+}
+.image figure
+{
+    max-width: 250px;
+}
+.image figcaption
+{
+    width: 93%;
+    border: 1px solid black;
+    background:linear-gradient(to right,rgb(241, 207, 207),rgb(190, 176, 176));
+    font-size: 17px;
+    color: rgb(94, 82, 82);
+    text-align: center;
+}
+figure figcaption
+{
+    border: 1px solid black;
+    background:linear-gradient(to right,rgb(241, 207, 207),rgb(190, 176, 176));
+    font-size: 17px;
+    color: rgb(94, 82, 82);
+    text-align: center;
+    width: 30.6%;
+}
+.parti li
+{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+img.UC
+{
+    width: 30%;
+    margin-top: 1.5%;
+    height: 200px;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px gray;
+
+
+}
+.acacher
+{
+    display: none;
+}
+.composant
+{
+    width: 65%;
+    float: right;
+    text-align: justify;
+}
+div.soft
+{
+    display: flex;
+    flex-direction: column;
+}
+
+h3
+{
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+    float: right;
+}
+.CPU, .CM, .ram,.DD,.gpu,.bios,.UEFI,.OS,.screen,.keyboard,.mouse
+{
+    width: 60%;
+    float: left;
+    text-align: justify;
+    margin-bottom: 1%;
+}
+img.CPU,img.CM, img.RAM,img.disque-dur,img.GPU,img.bios,img.UEFI,img.OS,img.screen,img.mouse,img.keyboard
+{
+    width: 20%;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px gray;
+
+
+}
+.cls,.part
+{
+    font-weight: 600;
+    color: rgb(136, 136, 172);
+    text-decoration: none;
+}
+@media screen and (max-width:1220px)
+{
+    .image
+        {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+        }
+    .image img
+        {
+               width: 100%;
+               margin-bottom: 10px;
+               height: 300px;
+               border: 2px solid black;
+               padding: 2px 2px 2px 2px;
+               box-shadow: 2px 2px 2px gray;
+        }
+    .process,.ordi,.cartemere,.ram,.DD,.GPU,.bios,.UEFI,.OS,.screen,.keyboard,.mouse
+    {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .composant,.CPU,.CM,.ram,.CPU,.gpu,.bios,.UEFI,.OS,.DD,.screen,.keyboard,.mouse
+    {
+        width: 100%;
+    }
+    img.UC,img.CPU,img.CM,img.RAM,img.disque-dur,img.GPU,img.bios,img.UEFI,img.OS,img.screen,img.mouse,img.keyboard
+    {
+        display: block;
+        width: 70%;
+        position: relative;
+        left: 18%;
+        height: 300px;
+    }
+    img.CPU,img.CM,img.RAM,img.disque-dur,img.GPU,img.bios,img.UEFI,img.OS,img.screen,img.mouse,img.keyboard
+    {
+        margin-left: -0.1%;
+    }
+    .image figcaption
+    {
+        width: 103%;
+     }
+     h1
+     {
+        position: relative;
+        margin-top: 10%;
+     }
+
+}

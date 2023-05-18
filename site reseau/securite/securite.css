@@ -1,0 +1,9 @@
+.sechead
+{
+    background: center url(../photos/securitehead.avif) ;
+    width: 100%;
+    height: 50vh;
+    background-size: 100%;
+    margin-top: 1%;
+
+}

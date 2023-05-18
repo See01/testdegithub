@@ -1,0 +1,76 @@
+div.header
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+div.header span
+{
+    font-size: 65px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right,rgb(119, 112, 180),rgb(110, 106, 106));
+}
+header.head
+{
+    background: top url(../photos/programmation.avif) ;
+    width: 100%;
+    height: 30vh;
+    background-size: 100%;
+}
+p
+{
+    text-align: justify;
+}
+.program li
+{
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* partie algo */
+header.algo
+{
+    background: center url(../photos/algo.avif) ;
+    width: 100%;
+    height: 30vh;
+    background-size: 100%;
+    margin-top: 1%;
+}
+.halogo
+{
+    background: center url(../photos/htmlcss.avif) ;
+    width: 100%;
+    height: 30vh;
+    background-size: 100%;
+    margin-top: 1%;
+}
+
+/* media query */
+@media screen and (max-width:1220px)
+{
+    div.header
+    {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:660px)
+{
+    div.header
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:570px)
+{
+    div.header span
+    {
+       display: block;
+    }
+    div.header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

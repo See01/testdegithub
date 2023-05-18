@@ -1,0 +1,271 @@
+        <!DOCTYPE html>
+        <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../acceuil/menu.css">
+            <link rel="stylesheet" href="reseau.css">
+            <title>Document</title>
+        </head>
+        <body>
+        <!-- en tete -->
+        <header>
+            <div class="head" >
+                    <div class="logo">
+                            <a href="">
+                                <figcaption></figcaption><img class="logo" src="../photos/LOGO.jpg" alt="reseau"></a>
+                    </div> 
+                    <div class="en_tete">
+                            <div class="info">
+                                L'informatique une <span class="passion">PASSION</span>
+                            </div>
+                            <div class="sec">
+                                La sécurité une <span class="OBLIGATION">OBLIGATION</span>
+                            </div> 
+                    </div>
+            </div>
+            <form class="menu-search">
+                <input class="barre" type="search" placeholder="Que recherchez-vous?" autofocus>
+                <button type="submit" value="RECHERCHER">OK</button>
+            </form>
+        </header>
+        <!-- menu -->
+        <nav>
+            <div class="nav">
+                    <ul class="menu">
+                        <li><a href="../securite/securite.html">SECURITE</a></li>
+                        <li><a href="../programation/progamamtion.html">PROGRAMMATION</a>
+                            <ul class="pro">
+                                    <li><a href="../programation/algo.html">ALGORITHMIQUE</a> </li>
+                                    <li><a href="../programation/html.html">HTML & CSS</a></li>
+                                    <li><a href="../programation/javascript.html">JAVASCRIPT</a></li>
+                                    <li><a href="../programation/langagec.html">LANGAGE C</a></li>
+                                    <li><a href="../programation/python.html">PYTHON</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../systeme/systeme.html">SYSTEME</a>
+                            <ul class="sys">
+                                    <li><a href="../systeme/linux.html">LINUX</a></li>
+                                    <li><a href="../systeme/windows.html">WINDOWS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../reseau/reseau.html">RESEAU</a>
+                            <ul class="net">
+                                    <li><a href="../reseau/LAN.html">RESEAU LOCAL</a></li>
+                                    <li><a href="../reseau/equipement.html">EQUIPEMENTS</a></li>
+                                    <li><a href="../reseau/administrartion.html">ADMINISTRATION</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../ordinateur/ordinateur.html">L'ORDINATEUR</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <main>
+        <div class="definition">
+            <div>
+                Sommaire
+            </div>
+            <ol class="definition" style="list-style-type: upper-roman;">
+                <li><a href="#lan">Qu'est ce que le LAN?</a></li>
+                <li><a href="#lanwan">Quelle est sa différence avec le WAN?</a></li>
+                <li><a href="#caracteristique">Quels sont ses caractéristiques?</a></li>
+                <li><a href="#type">Quels sont les ypes de LAN?</a>
+                    <ol>
+                        <li><a href="#vlan"> Le VLAN</a></li>
+                        <li><a href="#wlan">Le WLAN</a></li>
+                    </ol>
+                </li>
+                <li><a href="#miseenplace">Les besoins pour mettre en place un LAN</a>
+                    <ol>
+                        <li><a href="#materiel">Le materiel</a></li>
+                        <li><a href="#adresse">L'adressage</a>
+                            <ol style="list-style-type: lower-alpha;">
+                                <li><a href="#amac">L'adresse MAC</a></li>
+                                <li><a href="#aip4">L'adresse IP v4</a></li>
+                                <li><a href="#aip6">L'adresse IP v6</a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><a href="#securite">La nécessité de le sécuriser</a></li>
+            </ol>
+        </div>
+        <div class="resif_titre">A la decouverte du reseau local🧐</div>
+        <p id="lan">
+            Un réseau local, en anglais Local Area Network ou LAN, est un réseau informatique où les terminaux qui y participent (ordinateurs, etc.) s'envoient des trames au niveau de la couche de liaison sans utiliser l’accès à internet (pour communiqur il n'ont besoin que de switchs et pas forcément de routeur).
+            On définit aussi le réseau local par le domaine de diffusion, c'est-à-dire l'ensemble des stations qui reçoivent une même trame de diffusion (en anglais broadcast frame). Au niveau de l'adressage IP, un réseau local correspond généralement à un sous-réseau IP (même préfixe d'adresse IP), cependant un seul lan peut être subdiviser en plusieurs sous réseaux.
+            On interconnecte les réseaux locaux au moyen de routeurs.Une autre approche consiste à définir le réseau local par sa taille physique. C'est généralement un réseau à une échelle géographique relativement restreinte, par exemple une salle informatique, une habitation particulière, un bâtiment ou un site d'entreprise. <br>
+            En tant qu'administrarteur réseau, il sera notre centre d'activités.
+            Dans le cas d'un réseau d'entreprise, on utilise aussi le sigle RLE pour réseau local d'entreprise
+        </p>
+        <div class="resif_titre">Donc c'est un reseau comme internet?🤔</div>
+        <div id="lanwan">
+            <p>
+                Dans la page réseau de ce site, nous avons vu la définition du LAN et celle du WAN donc de façon simple et précise, on peut dire que le LAN est contenu dans le WAN qui est par conséquent plus grand, Mais cela ne signifie pas que les machines d'un lan peuvent directement communiquer avec les autres lans contenus dans le wan. Pour cela, il faut quelque procédure à respecter.
+                D'abord, il faut forcément disposr d'un routeur car c'est elle qui donne la possibilité de faire circuler les messages entre sous réseaux différents, aussi avoir une adresse publique (souvent celle du routeur) pour assurer le voyage des paquets. 
+            </p>
+            <img src="../photos/lanwan.jpeg" alt="lan et internet">
+        </div>
+        <div class="resif_titre">OK... et qu'est-ce qui caracterise un LAN?🤨</div>
+        <p id="caracteristique">
+            La qualité d'un réseau local est apprécié à travers un certains nombres de critéres. On peut en citer les inconturnables:
+        </p>
+        <ol class="carac">
+            <li>la topologie du réseau</li>
+                <p>aussi bien celle physique que logique pour comprendre le fonctionnement du réseau </p>
+            
+            <li>la vitesse</li>
+                <p>c'est la mesure du débit et de la bande passante</p>
+            
+            <li>le coût</li>
+                <p>il s'agit de la somme nécessaire pour l'achat,l'instaallation et la maintenance</p>
+            
+            <li>la sécurité</li>
+                <p>elle indique la façon dont le réseau est prtégée</p>
+           
+            <li>la disponibilité</li>
+                <p>elle indique le temps durant laquelle le réseau est disponible</p>
+            
+            <li>l'évolutivité</li>
+                <p>c'est le fait de mettre en place le réseau avec des prévisions sur de futures équipements à ajouter pour faciliter leur intégration</p>
+            
+            <li>la fiabilité</li> 
+                <p>il s'agit de savoir la tolérence aux pannes des équipements</p>
+                   
+        </ol>
+        <div class="resif_titre">Mais... sous quel forme peut-on le retouver?😳</div>
+        <p id="type">
+            le réseau local peut être retrouve sous différentes formes selon sa conception et son mode de connexion. Princpalement, on peut en citer trois:
+        </p>
+        <div class="type">
+            <ol>
+                <li id="vlan">LES VLAN
+                    <p>
+                        Un VLAN est un sous-réseau logique de périphériques dans un domaine de diffusion, partitionné par des commutateurs réseau et/ou un logiciel de gestion de réseau, qui peut agir en propre comme un réseau local LAN distinct.
+                        Ils permettent de :
+                        <ul>
+                            <li>Séparer les flux</li>
+                            <li>Segmentation : réduire la taille d'un domaine de collision</li>
+                            <li>Sécurité : permet de créer un ensemble logique isolé pour améliorer la sécurité. Le seul moyen pour communiquer entre des machines appartenant à des VLAN différents est alors de passer par un routeur</li>
+                            <li>Optimisation de la bande passante</li>
+                        </ul>
+                    </p>
+                    <img src="../photos/vlan.png" alt="vlan">
+                </li>
+                <li id="wlan">LE WLAN
+                    <p>
+                        Un réseau sans fil est un réseau informatique numérique qui connecte différents postes ou systèmes entre eux par ondes radio. Il peut être associé à un réseau de télécommunications pour réaliser des interconnexions à distance entre nœuds.
+                        La norme la plus utilisée actuellement pour les réseaux sans fil est la norme IEEE 802.11, plus connue sous le nom de Wi-Fi.
+                        Le rayonnement géographique des ondes est relativement limité étant donné la faible puissance d’émission des solutions matérielles actuelles. Pour cette raison, les réseaux sans fil se sont avant tout développés comme réseaux internes, propres à un bâtiment, soit comme réseau d’entreprise, soit comme réseau domestique. <br>
+                        Les réseaux sans fil constituent une alternative aux réseaux câblés. Leur compatibilité avec les réseaux câblés permet également de les y ajouter comme extensions.
+                    </p>
+                    <img src="../photos/wlan.jpg" alt="wlan">
+                </li>
+            </ol>
+        </div>
+        <div class="resif_titre">Tout cela est bien mais, comment pouruoi installer un LAN🙃</div>
+        <p id="miseenplace">
+            Lorsque vous disposez de plusieurs ordinateurs, il peut être pratique de les connecter ensemble afin de créer un réseau local (en anglais LAN, abréviation de Local Area Network). La mise en place d'un tel réseau est très peu onéreuse, contrairement à ce que l'on pourrait croire.
+            Voici quelques avantages que pourra vous apporter la mise en place d'un réseau local :
+            <ul class="caract">
+                <li>Transfert de fichiers</li>
+                <li>Partage de ressources (partage de la connexion à internet, partage d'imprimante, disques partagés, etc.)</li>
+                <li>Mobilité (dans le cas d'un réseau sans fil)</li>
+                <li>Discussion (essentiellement lorsque les ordinateurs sont distants)</li>
+                <li>Jeu en réseau</li>
+            </ul>
+            Pour créer un réseau local en RJ45, il est recommandé d'adopter une structure dite « en étoile », dans laquelle les ordinateurs sont chacun connecté au switch (commutateur) par l'intermédiaire d'un câble RJ45; car il permettra d'établir des connexions en full duplex ce qui ne sera que bénéfique pour la rapidité des échanges et évitra les collisaions qui provoquent des latences. <br>
+            Cependant, si vous désirez connecter uniquement deux ordinateurs, il est possible de se passer de switch, en les reliant directement avec un câble RJ45 croisé. <br> Voyons de plus prés les deux composants essentiels du réeau.
+        </p>
+        <ol style="list-style-type: upper-roman;">
+            <li id="materiel">materiel
+                <p>
+                    Ils forment l'architecture physique qui est comme on l'a dit l'agencement des différents équipements et les types de support utilisé. Pour approfondir votre connaissance des matériels, se reférer à <a href="equipement.html">la page sur les matériels</a>.
+                </p>
+            </li>
+            <li id="adresse">adresse
+                <p>
+                    Au delà des supports de communication, les équipements ont forcément besoin d'adresses pour puvoie échanger, elles constituent leur carte d'identité grâce à laquelle ont peu les reconnaitre. Il en existe deux grandes familles.
+                </p>
+                <ol>
+                    <li id="amac">Adresse MAC
+                        <p>
+                            Une adresse MAC (de l'anglais Media Access Control1), parfois nommée adresse physique2, est un identifiant physique stocké dans une carte réseau ou une interface réseau similaire. Elle est unique au monde. Toutes les cartes réseau ont une adresse MAC, même celles contenues dans les PC et autres appareils connectés (tablette tactile, smartphone, consoles de jeux, réfrigérateurs, montres, etc.).
+                            Une adresse MAC-48 est constituée de 48 bits (6 octets) et est généralement représentée sous la forme hexadécimale en séparant les octets par un double point. Par exemple 5E:FF:56:A2:AF:15. <br>
+                            Ces 48 bits sont répartis de la façon suivante :
+                            <ul>
+                                <li>1 bit I/G : indique si l'adresse est individuelle, auquel cas le bit sera à 0 (pour une machine unique, unicast) ou de groupe (multicast ou broadcast), en passant le bit à 1 ;</li>
+                                <li>1 bit U/L : 0 indique si l'adresse est universelle (conforme au format de l'IEEE) ou locale, 1 pour une adresse administrée localement ;</li>
+                                <li>22 bits réservés : tous les bits sont à zéro pour une adresse locale, sinon ils contiennent l'adresse du constructeur ;</li>
+                                <li>24 bits : adresse unique (pour différencier les différentes cartes réseaux d'un même constructeur). <br></li>
+                            </ul> <br>
+                            Les concepteurs d'Ethernet ayant utilisé un adressage de 48 bits, il existe potentiellement 248 (environ 281 000 milliards) d'adresses MAC possibles. L'IEEE donne des préfixes de 24 bits (appelés Organizationally Unique Identifier - OUI) aux fabricants, ce qui offre 224 (environ 16 millions) d'adresses MAC disponibles par préfixe.
+                            Le changement d’une adresse MAC peut se faire au niveau logiciel, de manière temporaire avec une commande (ifconfig sous Linux par exemple) ou persistant en modifiant un fichier de configuration (la base de registre sous Windows par exemple).
+
+                        </p>
+                    </li>
+                    <li id="aip4">Adresse IP v4
+                        <p>
+                            IPv4 (Internet Protocol version 4) est la première version d'Internet Protocol (IP) à avoir été largement déployée, et qui forme encore en 2023 la base de la majorité des communications sur Internet, par rapport à l'IPv6. Elle est décrite dans la RFC 7911 de septembre 1981, remplaçant la RFC 7602, définie en janvier 1980.
+                            Chaque interface d'un hôte IPv4 se voit attribuer une ou plusieurs adresses IP codées sur 32 bits (8 octets). Au maximum 4 294 967 296, soit 232 adresses peuvent donc être attribuées simultanément en théorie (en pratique, un certain nombre ne sont pas utilisables). <br>
+                            Une adresse IPv4 est représentée sous la forme de quatre nombres entiers séparés par des points comme 193.43.55.67. Chacun des nombres représente un octet. La plage d'attribution s'étend de 0.0.0.0 à 255.255.255.255, sachant qu'il existe des contraintes empêchant l'utilisation de certaines adresses (réservée, masque, broadcast, etc.).
+                            Elle est constituée de deux parties: le <span class="cls">net id</span> qui détermine la partie réseau et le <span class="cls">host id</span> qui détermine la partie cliente. 
+                            Il existe cinq classes d'adresses IP. Chaque classe est identifiée par une lettre allant de A à E.
+                            Ces différentes classes ont chacune leurs spécificités quant à la répartition du nombre d'octets servant à identifier le réseau ou les ordinateurs connectés à ce réseau :
+                            <ul>
+                                <li>Une adresse IP de classe A dispose d'une partie net id comportant uniquement un seul octet.</li>
+                                <li>Une adresse IP de classe B dispose d'une partie net id comportant deux octets.</li>
+                                <li>Une adresse IP de classe C dispose d'une partie net id comportant trois octets.</li>
+                                <li>Les adresses IP de classes D et E correspondent à des adresses IP particulières.</li>
+                            </ul>
+                            Afin d'identifier à quelle classe appartient une adresse IP, il faut examiner les premiers bits de l'adresse <br>
+                            Classe A <br>
+                            Une adresse IP de classe A dispose d'un seul octet pour identifier le réseau et de trois octets pour identifier les machines sur ce réseau. Un réseau de classe A peut comporter jusqu'à 23x8-2 postes, soit 224-2, soit 16 777 214 terminaux. Le premier octet d'une adresse IP de classe A commence toujours par le bit 0. La plage d'adresse en binaire s'étend de 0000 0000 à 0111 1111, soit de 0.0.0.0 à 127.255.255.255. Certaines valeurs étant réservées à des usages particuliers. Un exemple d'adresse IP de classe A est : 10.50.49.13. <br>
+                            Classe B <br>
+                            Une adresse IP de classe B dispose de deux octets pour identifier le réseau et de deux octets pour identifier les machines sur ce réseau. Un réseau de classe B peut comporter jusqu'à 22x8-2 postes, soit 216-2, soit 65 534 terminaux. Le premier octet d'une adresse IP de classe B commence toujours par la séquence de bits 10, il est donc compris entre 128 et 191. Un exemple d'adresse IP de classe B est : 172.16.1.23. <br>
+                            Classe C <br>
+                            Une adresse IP de classe C dispose de trois octets pour identifier le réseau et d'un seul octet pour identifier les machines sur ce réseau. Un réseau de classe C peut comporter jusqu'à 28-2 postes, soit 254 terminaux. Le premier octet d'une adresse IP de classe C commence toujours par la séquence de bits 110, il est donc compris entre 192 et 223. Un exemple d'adresse IP de classe C est : 192.168.1.34. <br>
+                            Classe D <br>
+                            Les adresses de classe D sont utilisées pour les communications multicast. Le premier octet d'une adresse IP de classe D commence toujours par la séquence de bits 1110, il est donc compris entre 224 et 239. Un exemple d'adresse IP de classe D est : 224.0.0.1. <br>
+                            Classe E <br>
+                            Les adresses de classe E sont réservées par IANA (Internet Assigned Numbers Authority) à un usage non déterminé. Les adresses de classe E commencent toujours par la séquence de bits 1111, ils débutent donc en 240.0.0.0 et se terminent en 255.255.255.255. <br>
+                            L'épuisement des adresses IPv4 a conduit au développement d'une nouvelle version d'IP, IPv6, et à la transition d'IPv4 vers IPv6 afin d'adopter cette nouvelle version. Le manque d'adresse IPv4 est dans un premier temps contourné grâce à l'utilisation de techniques de traduction d'adresses (NAT) ainsi que par l'adoption du système CIDR. Le nombre d'adresses IP Version 4 publiques est arrivé officiellement à saturation le 3 février 2011.
+                        </p>
+                    </li>
+                    <li id="aip6">Adresse IP v6
+                        <p>
+                            IPv6 est l'aboutissement des travaux menés au sein de l'IETF au cours des années 1990 pour succéder à IPv4 et ses spécifications ont été finalisées dans la RFC 24601 en décembre 1998. IPv6 a été standardisé dans la RFC 82002 en juillet 2017.
+                            Grâce à des adresses de 128 bits au lieu de 32 bits, IPv6 dispose d'un espace d'adressage bien plus important qu'IPv4 (plus de 340 sextillions, ou 3,4x10^38, soit près de 7,9 x 1028 de fois plus que le précédent). Cette quantité d'adresses considérable permet une plus grande flexibilité dans l'attribution des adresses et une meilleure agrégation des routes dans la table de routage d'Internet. La traduction d'adresse, 
+                            qui a été rendue populaire par le manque d'adresses IPv4, n'est plus nécessaire.IPv6 dispose également de mécanismes d'attribution automatique des adresses et facilite la renumérotation. La taille du sous-réseau, variable en IPv4, a été fixée à 64 bits en IPv6. Les mécanismes de sécurité comme IPsec font partie des spécifications de base du protocole. L'en-tête du paquet IPv6 a été simplifié et des types d'adresses locales facilitent l'interconnexion de réseaux privés.
+                            Le déploiement d'IPv6 sur Internet est compliqué en raison de l'incompatibilité des adresses IPv4 et IPv6. Les traducteurs d'adresses automatiques se heurtent à des problèmes pratiques importants (RFC 49663). Pendant une phase de transition où coexistent IPv6 et IPv4, les hôtes disposent d'une double pile, c'est-à-dire qu'ils disposent à la fois d'adresses IPv6 et IPv4, et des tunnels permettent de traverser les groupes de routeurs qui ne prennent pas encore en charge IPv6. <br>
+                            IPv6 améliore aussi certains aspects du fonctionnement d'IP, à la lumière de l'expérience acquise.
+                            Les spécifications principales d'IPv6 sont publiées en 1995 par l'IETF. Parmi les nouveautés, on peut citer :
+                            <ul>
+                                <li>des mécanismes de configuration et de renumérotation automatique</li>
+                                <li>IPsec, QoS et le multicast font partie de la spécification d'IPv6, au lieu d'être des ajouts ultérieurs comme en IPv4</li>
+                                <li>la simplification des en-têtes de paquets, qui facilite notamment le routage</li>
+                                <li>l'augmentation de 232 (soit environ 4,3 x 10^9) à 2^128 (soit environ 3,4 x 1038) du nombre d'adresses disponibles. Pour épuiser la totalité de ce stock d'adresses, il faudrait placer 667 millions de milliards d'appareils connectés sur chaque millimètre carré de la surface concrète de la Terre. En 2025, le nombre d'appareils connectés à Internet serait d'environ 75 milliards</li>
+                            </ul>
+                            Le fonctionnement d'IPv6 est très similaire à celui d'IPv4. Les protocoles TCP et UDP sont pratiquement inchangés. Ceci est résumé par la formule « 96 bits de plus, rien de magique »
+                            Une adresse IPv6 est longue de 128 bits, soit 16 octets, contre 32 bits / 4 octets pour IPv4. La notation décimale pointée employée pour les adresses IPv4 (par exemple 172.31.128.1) est abandonnée au profit d’une écriture hexadécimale, où les 8 groupes de 2 octets (16 bits par groupe) sont séparés par un signe deux-points : <br>
+                            2001:0db8:0000:85a3:0000:0000:ac1f:8001.
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <div class="resif_titre">SUPERRR!!!😎 mais on n'a pas encore parlé de securité</div>
+        <p id="securite">
+            Nous concédons que la conception d’une architecture réseau est un processus complexe. Néanmoins, une conception appropriée ne doit pas reposer uniquement sur les besoins fonctionnels. Elle doit également tenir compte des considérations de sécurité pour se prémunir de vulnérabilités critiques pouvant compromettre l’ensemble du système d’information. Il est donc nécessaire d’inclure les contraintes et les exigences de sécurité dès la phase de conception du réseau qui doivent assurer les objectifs de :
+            <ul>
+                <li>Confidentialité, afin de s’assurer que les personnes ou les systèmes autorisés aient « UNIQUEMENT » accès aux ressources et données auxquelles ils ont droit,</li>
+                <li>Intégrité, pour assurer que les ressources, données et informations ne soient pas, altérées, volées ou détruites par des utilisateurs ou des ressources non autorisés,</li>
+                <li>Disponibilité, afin d’assurer un fonctionnement sans failles, et garantir l’accès aux services et ressources sans interruption,</li>
+                <li>Traçabilité, afin de s’assurer que toute modification et changement dans le système sont surveillés et contrôlés.</li>
+            </ul>
+
+        </p>
+        </main>
+        </body>
+        </html>
