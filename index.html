@@ -11,12 +11,20 @@
     <h1 id="titre"></h1>
     <form action="index.html" method="post">
         <label for="NombreAcOnvertir">NombreAcOnvertir</label>
-        <input type="text" id="NombreAcOnvertir">
+        <input type="text" id="NombreAcOnvertir" placeholder="1234  |   1010101   |  E45A">
         <label for="BasedeDepart">BasedeDepart</label>
-        <input type="text" id="BasedeDepart">
+        <select name="BasedeDepart" id="BasedeDepart">
+            <option value="decimal">Decimal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+            <option value="binaire">Binaire</option>
+        </select>
         <label for="BasedArrivee">BasedArrivee</label>
-        <input type="text" id="BasedArrivee">
-        <button type="submit" id="button">Convertir</button>
+        <select name="BasedArrivee" id="BasedArrivee">
+            <option value="decimal">Decimal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+            <option value="binaire" selected>Binaire</option>
+        </select>
+        <button type="submit" id="button" aria-placeholder="decimal">Convertir</button>
     </form>
 
 
