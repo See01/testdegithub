@@ -1,10 +1,11 @@
 *{
     font-family: sans-serif;
+    font-weight: bolder;
 }
 
 body
 {
-    background-color: blue;
+    background:linear-gradient(to left,rgba(116, 73, 73, 0.4),whitesmoke);
 }
 
 form
@@ -12,7 +13,8 @@ form
     width: 50%;
     height: 70%;
     margin: 4% 25% 10% 25%;
-    background: linear-gradient(to left, whitesmoke,rgb(201, 201, 238));
+    background: linear-gradient(to left, whitesmoke,rgb(116, 73, 73, 0.4));
+    opacity: 0.77;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -26,8 +28,20 @@ input
     height: 10%;
     margin: 2% 10% 3% 20%;
     border-radius: 4px 4px 4px 4px;
-    font-size: 32px;
-    visibility: hidden;
+}
+input:focus
+{
+    font-size: 28px;
+    
+}
+select
+{
+    width: 61%;
+    height: 10%;
+    margin: 2% 10% 3% 20%;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 20px;
+
 }
 label
 {
@@ -45,7 +59,6 @@ button
     background-color: rgba(187, 153, 153, 0.7);
     width: 30%;
     border-radius: 4px 4px 4px 4px ;
-    visibility: hidden;
 
 }
 
